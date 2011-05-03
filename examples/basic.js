@@ -1,7 +1,7 @@
 var sys = require('sys'),
 	wsc = require('../lib/ws').ws;
 	
-var ws = new wsc('ws://localhost:8001/socket.io/websocket');
+var ws = new wsc('ws://localhost:8000/socket.io/websocket');
 
 ws.on('open', function(sessionId) {
 	console.log('Websocket open with session id: '+sessionId);

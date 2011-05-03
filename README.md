@@ -1,6 +1,6 @@
 # node-ws-client
 
-A Web Socket client for node.js. This is a convenience wrapper around Peter Griess's node-websocket-client that transparently handles encoding/decoding of websocket data packets as well as heartbeat requests from a websocket server. Specifically, it makes it very easy to talk with a socket.io server. 
+A Web Socket client for node.js. This is a convenience wrapper around Peter Griess's [node-websocket-client](https://github.com/pgriess/node-websocket-client) that transparently handles encoding/decoding of websocket data packets as well as heartbeat requests from a websocket server. Specifically, it makes it very easy to talk with a [socket.io](https://github.com/learnboost/socket.io-node) server. 
 
 ## Installation
 
@@ -29,7 +29,11 @@ Put `lib/ws.js` in your `$NODE_PATH`.
 		console.log('Got message: '+message);
 		ws.close();
 	});
-	
+
+To connect with a socket.io server use this connect string: 
+
+    var ws = new wsc('ws://<socket.io server host>:<port>/socket.io/websocket');
+
 ## License
 
 (The MIT License)
