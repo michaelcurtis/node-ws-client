@@ -1,0 +1,26 @@
+{
+    "name" : "ws-client",
+    "version" : "0.0.1",
+    "description" : "An HTML5 Web Sockets client - based on websocket-client by Peter Griess",
+    "author" : "Michael Curtis <michael.curtis@yahoo.com>",
+    "engines" : {
+        "node" : ">=0.4.0"
+    },
+    "repositories" : [
+        {
+            "type" : "git",
+            "url" : "http://github.com/michaelcurtis/node-ws-client.git"
+        }
+    ],
+    "licenses" : [
+        {
+            "type" : "MIT",
+            "url" : "http://github.com/michaelcurtis/node-ws-client/blob/master/LICENSE"
+        }
+    ],
+    "main" : "./lib/ws",
+	"dependencies": 
+		{
+	        "websocket-client": "1.0.0"
+		}
+}
